@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Basketball Cannon Simulator</h1>
+    <label for="angleInput">Angle (degrees):</label>
+    <input type="number" id="angleInput" value="45">
+    <label for="speedInput">Speed (m/s):</label>
+    <input type="number" id="speedInput" value="50">
+    <button id="launchButton">Launch Ball</button>
+    <br>
+    <div style="display: flex;">
+        <canvas id="gameCanvas" width="900" height="500"></canvas>
+        <div id="flightInfo">
+            <h3>Flight Information</h3>
+            <p>Time: <span id="flightTime">0</span> s</p>
+            <p>Distance: <span id="flightDistance">0</span> m</p>
+            <p>Gravity: 9.81 m/s²</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
