@@ -27,11 +27,18 @@ button:hover {
     background-color: #008800;
 }
 
+.game-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2%;
+}
+
 canvas {
     background-color: #111;
     border: 2px solid #00ff00;
     display: block;
-    margin: 20px auto;
+    width: 100vw;
 }
 
 #flightInfo {
@@ -53,6 +60,20 @@ canvas {
     text-align: center;
 }
 
-#flightInfo p {
-    margin: 5px 0;
+
+
+
+
+@media screen and (min-width:750px) {
+    .game-container{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0%;
+    }
+
+    canvas{
+        margin-top: 0.5%;
+        width: 70%;
+        height: 80vh;
+    }
 }

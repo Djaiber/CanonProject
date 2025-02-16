@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball Simulator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Basketball Cannon Simulator</h1>
@@ -14,8 +14,8 @@
     <input type="number" id="speedInput" value="50">
     <button id="launchButton">Launch Ball</button>
     <br>
-    <div style="display: flex;">
-        <canvas id="gameCanvas" width="900" height="500"></canvas>
+    <div class="game-container">
+        <canvas id="gameCanvas"  height="500"></canvas>
         <div id="flightInfo">
             <h3>Flight Information</h3>
             <p>Time: <span id="flightTime">0</span> s</p>
