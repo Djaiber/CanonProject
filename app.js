@@ -17,7 +17,7 @@ function calculateFlightData() {
     flightTimeDisplay.textContent = timeOfFlight.toFixed(2);
     flightDistanceDisplay.textContent = distance.toFixed(2);
 }
-
+// hola
 // Function to draw the cannon
 function drawCannon() {
     ctx.fillStyle = "gray";
